@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Cá Nhân - Pastel Profile</title>
+    <style>
+        :root {
+            --bg-color: #fdf6f9;
+            --card-bg: #ffffff;
+            --primary-color: #7b5293;
+            --primary-hover: #653f7c;
+            --accent-color: #f2e6f7;
+            --text-main: #333333;
+            --text-muted: #666666;
+            --border-radius: 12px;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .profile-container {
+            max-width: 750px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 20px rgba(123, 82, 147, 0.08);
+            overflow: hidden;
+            border: 1px solid #f0e6f5;
+        }
+
+        /* Header gọn gàng không cần ảnh */
+        .profile-header {
+            background: linear-gradient(135deg, #e8d7f1, #f9f0f5);
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .profile-header h1 {
+            margin: 0;
+            color: var(--primary-color);
+            font-size: 30px;
+            letter-spacing: 0.5px;
+        }
+
+        .profile-header p {
+            margin: 10px 0 0 0;
+            color: var(--text-muted);
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        /* Body nội dung */
+        .profile-body {
+            padding: 35px 30px;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            font-size: 18px;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 8px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .content-section {
+            margin-bottom: 30px;
+        }
+
+        .content-section p {
+            color: var(--text-muted);
+            margin: 0 0 10px 0;
+        }
+
+        /* Danh sách kỹ năng dạng thẻ tag */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skills-list li {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        /* Danh sách dự án / học tập */
+        .project-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .project-list li {
+            background-color: #faf7fc;
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .project-list li strong {
+            color: var(--primary-color);
+        }
+
+        .project-list li p {
+            margin: 4px 0 0 0;
+            font-size: 14px;
+        }
+
+        /* Nút liên kết */
+        .social-links {
+            display: flex;
+            gap: 12px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .social-links a {
+            display: inline-block;
+            text-decoration: none;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 22px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+        }
+
+        .social-links a:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+        }
+
+        .profile-footer {
+            text-align: center;
+            padding: 18px;
+            background-color: #faf5fc;
+            color: var(--text-muted);
+            font-size: 13px;
+            border-top: 1px solid #f2e6f7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-container">
+        <!-- Header -->
+        <div class="profile-header">
+            <h1>Dương Ngọc Vân Anh</h1>
+            <p>Sinh viên Khoa Công nghệ thông tin • Đại học Sư phạm TPHCM</p>
+        </div>
+
+        <!-- Body -->
+        <div class="profile-body">
+            <!-- Giới thiệu -->
+            <div class="content-section">
+                <h2 class="section-title">Giới thiệu tổng quan</h2>
+                <p>Chào bạn! Tôi là sinh viên năm nhất ngành Công nghệ thông tin. Trang web này được xây dựng như một không gian lưu trữ các bài tập thực hành lập trình web, đồng thời thể hiện tư duy thiết kế giao diện tối ưu, và hiện đại.</p>
+            </div>
+
+            <!-- Mục tiêu học tập -->
+            <div class="content-section">
+                <h2 class="section-title">Mục tiêu nghề nghiệp & Học tập</h2>
+                <p>Nắm vững nền tảng Front-end (HTML, CSS, JavaScript), thành thạo kiểm soát mã nguồn với Git/GitHub, và định hướng phát triển chuyên sâu trong lĩnh vực phát triển ứng dụng web hiện đại.</p>
+            </div>
+
+            <!-- Kỹ năng -->
+            <div class="content-section">
+                <h2 class="section-title">Kỹ năng kỹ thuật</h2>
+                <ul class="skills-list">
+                    <li>HTML5 Semantic</li>
+                    <li>CSS3 & Flexbox/Grid</li>
+                    <li>C / C++ Cơ bản</li>
+                    <li>Git & GitHub Pages</li>
+                    <li>UI/UX Pastel Design</li>
+                </ul>
+            </div>
+
+            <!-- Các dự án / Bài tập đang thực hiện -->
+            <div class="content-section">
+                <h2 class="section-title">Dự án & Bài tập tiêu biểu</h2>
+                <ul class="project-list">
+                    <li>
+                        <strong>Bài tập Hồ cá động (Animated Aquarium)</strong>
+                        <p>Xây dựng chuyển động CSS mượt mà cho các đối tượng đồ họa.</p>
+                    </li>
+                    <li>
+                        <strong>Trang CV Cá nhân Pastel</strong>
+                        <p>Thiết kế bố cục CV tối giản, hài hòa với các gam màu pastel nhẹ nhàng.</p>
+                    </li>
+                    <li>
+                        <strong>Hệ thống Bài tập Web Design Repository</strong>
+                        <p>Quản lý mã nguồn tập trung trên GitHub dưới tên tài khoản <code>vannanhh3007-rgb</code>.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Liên hệ -->
+            <div class="content-section">
+                <h2 class="section-title">Thông tin liên hệ</h2>
+                <ul class="social-links">
+                    <li><a href="https://github.com/vannanhh3007-rgb" target="_blank">GitHub Profile</a></li>
+                    <li><a href="mailto:email_cua_ban@gmail.com">Liên hệ qua Email</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="profile-footer">
+            <p>&copy; 2026 - Phát triển bởi Vân Anh</p>
+        </div>
+    </div>
+
+</body>
+</html>
